@@ -54,6 +54,7 @@ public extension UIScrollView {
         }
         
         view.frame = CGRectMake(0, originY, self.frame.size.width, view.frame.size.height)
+        view.autoresizingMask = .FlexibleWidth
         self.addSubview(view)
         self.sendSubviewToBack(view)
     }
